@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+
+<body>
+    <h1>Testing out forms</h1>
+    <form action="https://www.youtube.com/watch?v=0sgK8oXiu28">
+        <label for="user">Username</label>
+        <input type="text" id="user" /><br /><br />
+        <label>Email</label>
+        <input type="email" /><br /><br />
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Drop down</h2>
+    <form>
+        <label for="languages">Languages :</label>
+        <select name="Favorites languages" id="languages">
+            <option value="C">C</option>
+            <option selected value="Java">Java</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Text box</h2>
+    <form>
+        <label for="message">Your message :</label>
+        <textarea name="message" id="message" cols="50" rows="20"></textarea>
+        <button type="submit">Submit your message</button>
+    </form>
+</body>
+
+</html>
