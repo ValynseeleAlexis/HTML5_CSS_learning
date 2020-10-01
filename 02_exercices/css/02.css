@@ -1,0 +1,48 @@
+html,
+body {
+    font-size: 62.5%;
+    height: 200%;
+    /* So that 1rem == 16px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+.container {
+    background: cadetblue;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 20rem;
+    height: 20rem;
+    background: red;
+}
+
+.box1 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+}
+
+.box2 {
+    background: blue;
+    position: relative;
+    left: 3rem;
+}
+
+.box3 {
+    background: green;
+    position: sticky;
+    top: 0%;
+}

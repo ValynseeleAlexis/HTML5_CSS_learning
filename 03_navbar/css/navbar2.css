@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.main {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../assets/bg.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8vh;
+  background-color: #5d4954;
+
+}
+
+.logo {
+  color: rgb(226, 226, 266);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+#logo-bold {
+  color: coral;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  top: 8vh;
+  background-color: #5d4954;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 266);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links li {
+  opacity: 0;
+}
+
+.burger {
+  display: block;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 266);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/*toggled class by JS */
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.burger-toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-toggle .line2 {
+  opacity: 0;
+}
+
+.burger-toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* fonctions */
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transfrom: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
